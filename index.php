@@ -1,3 +1,10 @@
+<?php
+// Redirecciones para facilitar recordar las rutas
+if (isset($_GET['p']) && $_GET['p'] == 'correo') {
+	header('Location:http://webmail.webfaction.com');
+}
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
