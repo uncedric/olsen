@@ -1193,3 +1193,11 @@ ul#headernavigation  > li > a{
 .texto-negro {
 	color:#333;
 }
+#wrapper {
+	max-width: 600px; margin: 0 auto; text-align: center; }
+#gallery {
+	overflow: hidden; }
+#gallery a {
+	display: block; float: left; }
+#gallery a img {
+	display: block; border: 0; }

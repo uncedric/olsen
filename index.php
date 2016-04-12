@@ -37,12 +37,6 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
-	<style media="screen">
-		#wrapper { max-width: 600px; margin: 0 auto; text-align: center; }
-			#gallery { overflow: hidden; }
-			#gallery a { display: block; float: left; }
-			#gallery a img { display: block; border: 0; }
-	</style>
 
 
 </head>
@@ -172,7 +166,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				</div>
 
 				<div class="next-section">
-					<a class="go-to-galeria"><span></span></a>
+					<a class="go-to-galeria" href="#galeria"><span></span></a>
 				</div><!-- /.next-section -->
 
 			</div><!-- /.container -->
@@ -272,9 +266,8 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<h2 align="center">
 						Contacto
 				</h2><!-- /.section-name -->
-				<br>
 				<div class="row">
-				  <div class="col-md-6" style="padding:50px">
+				  <div class="col-md-5" style="padding:50px">
 							<h4>Cuernavaca Morelos.</h4>
 							<ul>
 								<li>045 777 324 98 18</li>
@@ -295,8 +288,9 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 							</ul>
 
 				  </div>
-					<div class="col-md-6">
-						<form id="contact-form" action="email.php" method="post" class="clearfix">
+					<div class="col-md-7">
+						<!-- action="email.php" -->
+						<form id="contact-form"  method="post" class="clearfix">
 			        <div class="contact-box-hide">
 			          <div class="col-sm-6">
 			            <input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="Nombre">
@@ -319,7 +313,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 			            <span class="contact-message-error"></span>
 			          </div>
 			          <div class="col-sm-2">
-			            <button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><i class="fa fa-rocket"></i></button>
+			            <button id="contact-submit" class="btn custom-btn col-xs-12" type="button" name="submit" onclick="sendEmail()"><i class="fa fa-send"></i></button>
 			            <span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
 			          </div>
 			        </div><!-- /.contact-box-hide -->
