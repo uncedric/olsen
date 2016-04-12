@@ -37,6 +37,12 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
+	<style media="screen">
+		#wrapper { max-width: 600px; margin: 0 auto; text-align: center; }
+			#gallery { overflow: hidden; }
+			#gallery a { display: block; float: left; }
+			#gallery a img { display: block; border: 0; }
+	</style>
 
 
 </head>
@@ -144,7 +150,8 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 				<div class="row">
 					<div class="col-md-6">
-					  <img src="images/IMG_0629.JPG" style="padding-top:20px" alt="" width="100%" />
+
+						<img src="images/IMG_0629.JPG" style="padding-top:20px" alt="" width="100%" />
 					</div>
 					<div class="col-md-6 texto-negro">
 						<!-- <h3>Servicio personalizado</h3> -->
@@ -164,7 +171,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				</div>
 
 				<div class="next-section">
-					<a class="go-to-subscribe"><span></span></a>
+					<a class="go-to-galeria"><span></span></a>
 				</div><!-- /.next-section -->
 
 			</div><!-- /.container -->
@@ -174,7 +181,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	</section><!-- /#about -->
 	<!-- About Us Section End -->
 
-	<section id="contact" class="section-style" data-background-image="images/IMG_0559.JPG">
+	<section id="fondo" class="section-style" data-background-image="" style="background-image:url(images/IMG_0559.JPG)">
 	<!-- <section id="contact" class="section-style" data-background-image="images/background/bg1.png"> -->
 		<div class="pattern height-resize">
 			<div class="container">
@@ -190,26 +197,38 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 	<section id="galeria" class="section-style" >
 		<div class="pattern height-resize">
-			<div class="container" style="padding-bottom:80px">
+			<div class="container" style="padding-bottom:80px" id="wrapper">
 				<h2 class="section-name" style="color:#555">
 					<span>
 						Galería
 					</span>
 				</h2><!-- /.section-name -->
+
+				<div class="row" id="gallery">
+
+					<div class="col-md-6">
+				    <a href="images/IMG_0559.JPG">
+							<img src="images/IMG_0559.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+				  </div>
+
+					<div class="col-md-6">
+						<a href="images/IMG_0627.JPG">
+							<img src="images/IMG_0627.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+				  </div>
+
+				</div>
+
+				<hr>
+				<br>
+
 				<div class="row">
-
-					<div class="col-md-3">
-				    <img src="images/IMG_0559.JPG" width="100%" alt="" />
+					<div class="col-md-6">
+				    <a href="images/IMG_0559.JPG">
+							<img src="images/IMG_0629.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
 				  </div>
-
-					<div class="col-md-3">
-				    <img src="images/IMG_0627.JPG" width="100%" alt="" />
-				  </div>
-					<div class="col-md-3">
-				    <img src="images/IMG_0629.JPG" width="100%" alt="" />
-				  </div>
-					<div class="col-md-3">
-				    <img src="images/IMG_0701.JPG" width="100%" alt="" />
+					<div class="col-md-6">
+						<a href="images/IMG_0701.JPG">
+							<img src="images/IMG_0701.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
 				  </div>
 				</div>
 
@@ -217,15 +236,18 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<br>
 
 				<div class="row">
-					<div class="col-md-3">
-				    <img src="images/casa con cielo azul.png"  width="100%" alt="" />
+					<div class="col-md-6">
+						<a href="images/casa con cielo azul.png">
+							<img src="images/casa con cielo azul.png" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
 				  </div>
-					<div class="col-md-3">
-				    <img src="images/IMG_0566.JPG" width="100%" alt="" />
+					<div class="col-md-6">
+						<a href="images/IMG_0566.JPG">
+							<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
 				  </div>
 
 					<div class="col-md-3">
-				    <img src="" alt="" />
+						<!-- <a href="images/IMG_0566.JPG">
+						<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>				     -->
 				  </div>
 				</div>
 			</div><!-- /.container -->
@@ -264,44 +286,40 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 			      </p><!-- /.section-description -->
 				  </div>
 					<div class="col-md-6">
-					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9665.192732326213!2d-99.21518989008244!3d18.865038888584024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd8b5f7cfb95b%3A0xe2b4caeef60fa3c8!2sBurgos%2C+Tres+de+Mayo%2C+Mor.!5e0!3m2!1ses!2smx!4v1460148630401" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<form id="contact-form" action="email.php" method="post" class="clearfix">
+			        <div class="contact-box-hide">
+			          <div class="col-sm-6">
+			            <input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="Nombre">
+			            <span class="first-name-error"></span>
+			          </div>
+			          <div class="col-sm-6">
+			            <input type="text"  class="form-control" id="last_name" name="last_name" required placeholder="Apellidos">
+			            <span class="last-name-error"></span>
+			          </div>
+			          <div class="col-sm-6">
+			            <input type="email" class="form-control"  id="contact_email" name="contact_email" required placeholder="Email">
+			            <span class="contact-email-error"></span>
+			          </div>
+			          <div class="col-sm-6">
+			            <input type="text"  class="form-control" id="subject" name="contact_subject" required placeholder="Asunto">
+			            <span class="contact-subject-error"></span>
+			          </div>
+			          <div class="col-sm-10">
+			            <textarea class="form-control" rows="5" id="message" name="message" required placeholder="Mensaje"></textarea>
+			            <span class="contact-message-error"></span>
+			          </div>
+			          <div class="col-sm-2">
+			            <button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><i class="fa fa-rocket"></i></button>
+			            <span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
+			          </div>
+			        </div><!-- /.contact-box-hide -->
+			        <div class="contact-message"></div>
+
+			      </form><!-- /#contact-form -->
 					</div>
 				</div>
 
-	      <form id="contact-form" action="email.php" method="post" class="clearfix">
-	        <div class="contact-box-hide">
-	          <div class="col-sm-6">
-	            <input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="Nombre">
-	            <span class="first-name-error"></span>
-	          </div>
-	          <div class="col-sm-6">
-	            <input type="text"  class="form-control" id="last_name" name="last_name" required placeholder="Apellidos">
-	            <span class="last-name-error"></span>
-	          </div>
-	          <div class="col-sm-6">
-	            <input type="email" class="form-control"  id="contact_email" name="contact_email" required placeholder="Email">
-	            <span class="contact-email-error"></span>
-	          </div>
-	          <div class="col-sm-6">
-	            <input type="text"  class="form-control" id="subject" name="contact_subject" required placeholder="Asunto">
-	            <span class="contact-subject-error"></span>
-	          </div>
-	          <div class="col-sm-10">
-	            <textarea class="form-control" rows="5" id="message" name="message" required placeholder="Mensaje"></textarea>
-	            <span class="contact-message-error"></span>
-	          </div>
-	          <div class="col-sm-2">
-	            <button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><i class="fa fa-rocket"></i></button>
-	            <span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
-	          </div>
-	        </div><!-- /.contact-box-hide -->
-	        <div class="contact-message"></div>
 
-	      </form><!-- /#contact-form -->
-
-	      <div class="next-section">
-	        <a class="go-to-page-top"><span></span></a>
-	      </div><!-- /.next-section -->
 
 	    </div><!-- /.container -->
 	  </div><!-- /.pattern -->
@@ -329,6 +347,8 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 		<!-- jQuery Library -->
 		<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+		<!-- Galería -->
+		<script type="text/javascript" src="assets/js/jquery.poptrox.min.js"></script>
 		<!-- Modernizr js -->
 		<script type="text/javascript" src="assets/js/modernizr-2.8.0.min.js"></script>
 		<!-- Plugins -->

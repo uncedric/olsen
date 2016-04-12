@@ -6,10 +6,18 @@ var  aboutImage = jQuery('#about').data('background-image');
 var  subscribeImage = jQuery('#subscribe').data('background-image');
 var  contactImage = jQuery('#contact').data('background-image');
 
-if (pageTopImage) {  jQuery('#page-top').css({ 'background-image':'url(' + pageTopImage + ')' }); };
-if (aboutImage) {  jQuery('#about').css({ 'background-image':'url(' + aboutImage + ')' }); };
-if (subscribeImage) {  jQuery('#subscribe').css({ 'background-image':'url(' + subscribeImage + ')' }); };
-if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contactImage + ')' }); };
+if (pageTopImage) {
+	jQuery('#page-top').css({ 'background-image':'url(' + pageTopImage + ')' });
+}
+if (aboutImage) {
+	jQuery('#about').css({ 'background-image':'url(' + aboutImage + ')' });
+}
+if (subscribeImage) {
+	jQuery('#subscribe').css({ 'background-image':'url(' + subscribeImage + ')' });
+}
+if (contactImage) {
+	jQuery('#contact').css({ 'background-image':'url(' + contactImage + ')' });
+}
 
 /* Background Images End
 -------------------------------------------------------------------*/
@@ -20,6 +28,11 @@ if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contac
 -------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
 	"use strict";
+
+		var foo = $('#gallery');
+			foo.poptrox({
+				usePopupCaption: true
+			});
 
 
     /* Window Height Resize
@@ -85,6 +98,9 @@ jQuery(document).ready(function($) {
   	$('.next-section .go-to-subscribe').click(function() {
     	$('html,body').animate({scrollTop:$('#subscribe').offset().top}, 1000);
   	});
+		$('.next-section .go-to-galeria').click(function() {
+    	$('html,body').animate({scrollTop:$('#galeria').offset().top}, 1000);
+  	});
   	$('.next-section .go-to-contact').click(function() {
     	$('html,body').animate({scrollTop:$('#contact').offset().top}, 1000);
   	});
@@ -113,7 +129,7 @@ jQuery(document).ready(function($) {
         } else if(resp.result === 'error') {
             $('.alert-warning').html(resp.msg).fadeIn().delay(3000).fadeOut();
         }
-    };
+    }
 
 
 
