@@ -82,10 +82,10 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 			<!-- Main navigation -->
 			<ul id="headernavigation" class="nav navbar-nav">
 				<li class="active"><a href="#page-top">Inicio</a></li>
-				<li><a href="#about">Instalaciones</a></li>
-				<li><a href="#galeria">Galería</a></li>
+				<li><a href="#about">Servicios</a></li>
+				<li><a href="#galeria">Instalaciones</a></li>
 				<!-- <li><a href="#subscribe">Suscríbete</a></li> -->
-				<li><a href="#contact">Contacto</a></li>
+				<li><a href="#subscribe">Contacto</a></li>
 			</ul> <!-- /.nav .navbar-nav -->
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
@@ -99,9 +99,9 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<!-- <h1 class="site-title">
 					Casa Olsen
 				</h1> -->
-				<h2 class="site-title">
+				<h1 class="site-title">
 					Casa Olsen
-				</h2>
+				</h1>
 				<!-- /.site-title -->
 				<h3 class="section-name">
 					<!-- <span>
@@ -137,14 +137,15 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<section id="about" class="section-style" data-background-image="../images/bg2.jpg">
 		<div class="pattern height-resize">
 			<div class="container">
-				<h3 class="section-name">
-					<span>
-						Nosotros
-					</span>
-				</h3><!-- /.section-name -->
+				<h2 align="center" class="texto-negro">
+						Asilo Cuernavca
+				</h2><!-- /.section-name -->
+				<h3 align="center" class="texto-negro">
+					Residencia Olsen
+				</h3>
 
 				<!-- /.Section-title  -->
-				<p class="section-description texto-negro" align="center">
+				<p class="section-description texto-negro" align="justify">
 					Somos un asilo en Cuernavaca para personas mayores, Casa Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales.
 				</p><!-- /.section-description -->
 
@@ -196,15 +197,19 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<!-- About Us Section End -->
 
 	<section id="galeria" class="section-style" >
-		<div class="pattern height-resize">
-			<div class="container" style="padding-bottom:80px" id="wrapper">
-				<h2 class="section-name" style="color:#555">
-					<span>
-						Galería
-					</span>
+		<div class="pattern height-resize" id="wrapper">
+			<div class="container" style="padding-bottom:80px" id="gallery">
+				<h2 class="texto-negro" align="center">
+						Instalaciones
 				</h2><!-- /.section-name -->
-
-				<div class="row" id="gallery">
+				<br>
+				<p class="section-description texto-negro" align="justify">
+					Las instalaciones de Residencia Olsen cuentan con una gran cantidad de áreas verdes para que tus seres queridos puedan disrutar de la tranquilidad de Cuernavaca y su hermoso clima.
+				</p><!-- /.section-description -->
+				<p class="section-description texto-negro" align="justify">
+					Nuestras instalaciones también cuentan con alberca, comedor, áreas comunales...
+				</p><!-- /.section-description -->
+				<div class="row" >
 
 					<div class="col-md-6">
 				    <a href="images/IMG_0559.JPG">
@@ -264,15 +269,12 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<section id="subscribe" class="section-style" data-background-image="images/madera.jpg" style="background-color:#21610B">
 	  <div class="pattern height-resize">
 	    <div class="container">
-	      <h3 class="section-name">
-	        <span>
-	          Contacto
-	        </span>
-	      </h3><!-- /.section-name -->
+				<h2 align="center">
+						Contacto
+				</h2><!-- /.section-name -->
 				<br>
 				<div class="row">
-				  <div class="col-md-6">
-						<p class="section-description">
+				  <div class="col-md-6" style="padding:50px">
 							<h4>Cuernavaca Morelos.</h4>
 							<ul>
 								<li>045 777 324 98 18</li>
@@ -283,7 +285,15 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 								<li>044 55 11 73 33 70</li>
 								<li>55 73 90 56</li>
 							</ul>
-			      </p><!-- /.section-description -->
+							<h4>Informes</h4>
+							<ul>
+								<li>
+									<script>
+										document.write('informes' + '@' + 'asilocuernavaca.com')
+									</script>
+								</li>
+							</ul>
+
 				  </div>
 					<div class="col-md-6">
 						<form id="contact-form" action="email.php" method="post" class="clearfix">
@@ -319,7 +329,8 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 					</div>
 				</div>
 
-
+				<br>
+				<br>
 
 	    </div><!-- /.container -->
 	  </div><!-- /.pattern -->
@@ -339,7 +350,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 		<!-- Footer Section -->
 		<footer id="footer-section">
 			<p class="copyright">
-				&copy; <a href="#">Casa Olsen</a>
+				&copy; <a href="#" style="color:#555">Casa Olsen <?php echo date('Y') ?></a>
 			</p>
 		</footer>
 		<!-- Footer Section End -->
