@@ -221,7 +221,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<hr>
 				<br>
 
-				<div class="row">
+				<div class="row" id="gallery">
 					<div class="col-md-6">
 				    <a href="images/IMG_0559.JPG">
 							<img src="images/IMG_0629.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
@@ -235,7 +235,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<hr>
 				<br>
 
-				<div class="row">
+				<div class="row" id="gallery">
 					<div class="col-md-6">
 						<a href="images/casa con cielo azul.png">
 							<img src="images/casa con cielo azul.png" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
