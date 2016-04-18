@@ -149,7 +149,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<div class="row">
 					<div class="col-md-6">
 
-						<img src="images/IMG_0629.JPG" style="padding-top:20px" alt="" width="100%" />
+						<img src="images/bugambilias1.png" style="padding-top:20px" alt="" width="100%" />
 					</div>
 					<div class="col-md-6 texto-negro">
 						<!-- <h3>Servicio personalizado</h3> -->
