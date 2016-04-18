@@ -26,6 +26,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 	<!-- Bootstrap  -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/animate.css" rel="stylesheet">
 
 	<!-- icon fonts font Awesome -->
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -149,7 +150,10 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<div class="row">
 					<div class="col-md-6">
 
-						<img src="images/bugambilias1.png" style="padding-top:20px" alt="" width="100%" />
+						<img
+							src="images/bugambilias1.png"
+							class="animated"
+							style="padding-top:20px" alt="" width="100%" />
 					</div>
 					<div class="col-md-6 texto-negro">
 						<!-- <h3>Servicio personalizado</h3> -->
@@ -210,12 +214,12 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 					<div class="col-md-6">
 				    <a href="images/IMG_0559.JPG">
-							<img src="images/IMG_0559.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/IMG_0559.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 
 					<div class="col-md-6">
 						<a href="images/IMG_0627.JPG">
-							<img src="images/IMG_0627.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/IMG_0627.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 
 				</div>
@@ -226,11 +230,11 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<div class="row" id="gallery">
 					<div class="col-md-6">
 				    <a href="images/IMG_0559.JPG">
-							<img src="images/IMG_0629.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/IMG_0629.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 					<div class="col-md-6">
 						<a href="images/IMG_0701.JPG">
-							<img src="images/IMG_0701.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/IMG_0701.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 				</div>
 
@@ -240,16 +244,16 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				<div class="row" id="gallery">
 					<div class="col-md-6">
 						<a href="images/casa con cielo azul.png">
-							<img src="images/casa con cielo azul.png" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/casa con cielo azul.png" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 					<div class="col-md-6">
 						<a href="images/IMG_0566.JPG">
-							<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>
+							<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>
 				  </div>
 
 					<div class="col-md-3">
 						<!-- <a href="images/IMG_0566.JPG">
-						<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" /></a>				     -->
+						<img src="images/IMG_0566.JPG" alt="" width="100%" title="Imagen de Asilo Cuernavaca" class="animated" /></a>				     -->
 				  </div>
 				</div>
 			</div><!-- /.container -->
@@ -270,7 +274,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 						Contacto
 				</h2><!-- /.section-name -->
 				<div class="row">
-				  <div class="col-md-5" style="padding:50px">
+				  <div class="col-md-5 animated" style="padding:50px">
 							<h4>Cuernavaca Morelos.</h4>
 							<ul>
 								<li>045 777 324 98 18</li>

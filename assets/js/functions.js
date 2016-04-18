@@ -1,3 +1,12 @@
+$(window).scroll(function () {
+    var y = $(window).scrollTop(),
+        x = $('.animated').offset().top - 800;
+    if (y > x) {
+        $('.animated').addClass('fadeInUp').removeClass('fadeOutDown');
+    } else {
+        $('.animated').removeClass('fadeInUp').addClass('fadeOutDown');
+    }
+});
 
 /* Background Images
 -------------------------------------------------------------------*/
