@@ -1182,8 +1182,11 @@ background: #00aaff;
 ---------------------------------------------------------------------- */
 
 /*	Casa Olen	*/
+h1,h2,h3,h4{
+	/*color:#845b54!important;*/
+}
 ul#headernavigation  > li > a{
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.8);
 	color:#777;
 }
 .section-name {
