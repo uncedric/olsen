@@ -9,17 +9,19 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>	Casa Olsen - Hacienda de retiro Cuernavaca</title>
-	<meta name="description" content="Asilo en Cuernavaca para personas mayores, Casa Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales." >
-	<meta name="author" content="Casa Olsen">
+	<title>	Residencia Olsen - Hacienda de retiro Cuernavaca</title>
+	<meta name="description" content="Asilo en Cuernavaca para personas mayores, Residencia Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales." >
+	<meta name="author" content="Residencia Olsen">
 
 	<!-- OG -->
-	<meta property="og:title" content="Casa Olsen - Hacienda de retiro en Cuernavaca"/>
+	<meta property="og:title" content="Residencia Olsen - Hacienda de retiro en Cuernavaca"/>
 	<meta property="og:type" content="website"/>
-	<meta property="og:description" content="Asilo en Cuernavaca para personas mayores, Casa Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales."/>
+	<meta property="og:description" content="Asilo en Cuernavaca para personas mayores, Residencia Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales."/>
 
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Robots" content="All">
+	<meta content="all,index,follow" name="robots">
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 	<!-- Bootstrap  -->
@@ -94,7 +96,8 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 					Casa Olsen
 				</h1> -->
 				<h1 class="site-title">
-					Casa Olsen
+					<!-- Residencia Olsen -->
+					<img src="images/logo.png" alt="" />
 				</h1>
 				<!-- /.site-title -->
 				<h3 class="section-name">
@@ -140,7 +143,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 
 				<!-- /.Section-title  -->
 				<p class="section-description texto-negro" align="justify">
-					Somos un asilo en Cuernavaca para personas mayores, Casa Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales.
+					Somos un asilo en Cuernavaca para personas mayores, Residencia Olsen es un centro geriátrico donde tus seres queridos encontrarán confort, cariño y cuidados especiales.
 				</p><!-- /.section-description -->
 
 				<div class="row">
@@ -344,7 +347,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 		<!-- Footer Section -->
 		<footer id="footer-section">
 			<p class="copyright">
-				&copy; <a href="#" style="color:#555">Casa Olsen <?php echo date('Y') ?></a>
+				&copy; <a href="#" style="color:#555">Residencia Olsen <?php echo date('Y') ?></a>
 			</p>
 		</footer>
 		<!-- Footer Section End -->
