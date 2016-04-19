@@ -98,7 +98,7 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 				</h1> -->
 				<h1 class="site-title">
 					<!-- Residencia Olsen -->
-					<img src="images/logo.png" alt="" />
+					<img src="images/logo.png" class="animated swing" alt="" />
 				</h1>
 				<!-- /.site-title -->
 				<h3 class="section-name">
@@ -200,11 +200,11 @@ if (isset($_GET['p']) && $_GET['p'] == 'correo') {
 	<section id="galeria" class="section-style" >
 		<div class="pattern height-resize" id="wrapper">
 			<div class="container" style="padding-bottom:80px" id="gallery">
-				<h2 class="texto-negro" align="center">
+				<h2 class="texto-negro animated" align="center">
 						Instalaciones
 				</h2><!-- /.section-name -->
 				<br>
-				<p class="section-description texto-negro" align="justify">
+				<p class="section-description texto-negro animated" align="justify">
 					Las instalaciones de Residencia Olsen cuentan con una gran cantidad de áreas verdes para que tus seres queridos puedan disrutar de la tranquilidad de Cuernavaca y su hermoso clima.
 				</p><!-- /.section-description -->
 				<p class="section-description texto-negro" align="justify">
